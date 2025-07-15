@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Name Name, n/a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  C:\Users\okupa\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\okupa\Documents\IT\STM32\SSD1306\ssd1306.uvprojx
+Project File Date:  07/15/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\okupa\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling delay.c...
+compiling ssd1306.c...
+compiling main.c...
+compiling stm32l0xx_hal.c...
+C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c(131): warning: unused parameter 'SubPriority' [-Wunused-parameter]
+  131 | void HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority)
+      |                                                                              ^
+1 warning generated.
+compiling stm32l0xx_hal_cortex.c...
+compiling stm32l0xx_hal_dma.c...
+C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c(228): warning: unused parameter 'TypeProgram' [-Wunused-parameter]
+  228 | HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint32_t Data)
+      |                                              ^
+C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c(270): warning: unused parameter 'TypeProgram' [-Wunused-parameter]
+  270 | HAL_StatusTypeDef HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint32_t Data)
+      |                                                 ^
+2 warnings generated.
+compiling stm32l0xx_hal_flash.c...
+compiling stm32l0xx_hal_flash_ex.c...
+compiling stm32l0xx_hal_gpio.c...
+compiling stm32l0xx_hal_i2c_ex.c...
+compiling stm32l0xx_hal_pwr.c...
+compiling stm32l0xx_hal_pwr_ex.c...
+compiling stm32l0xx_hal_i2c.c...
+compiling stm32l0xx_hal_rcc.c...
+compiling stm32l0xx_hal_rcc_ex.c...
+assembling startup_stm32l031xx.s...
+compiling system_stm32l0xx.c...
+linking...
+Program Size: Code=4828 RO-data=696 RW-data=4 ZI-data=1728  
+".\Objects\ssd1306.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32L0xx_DFP.2.3.0.pack
+                Keil::STM32L0xx_DFP@2.3.0
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+   * Component: COMMON Version: 1.12.2
+   * Component: CORTEX Version: 1.12.2
+   * Component: DMA Version: 1.12.2
+   * Component: FLASH Version: 1.12.2
+   * Component: GPIO Version: 1.12.2
+   * Component: I2C Version: 1.12.2
+   * Component: PWR Version: 1.12.2
+   * Component: RCC Version: 1.12.2
+   * Component: Startup Version: 1.12.2
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32L031K6Tx
+  ./RTE/_Target_1
+  C:/Users/okupa/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include
+  C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/STM32L0xx_HAL_Driver/Inc
+  C:/Users/okupa/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.3.0/Drivers/STM32L0xx_HAL_Driver/Inc/Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:COMMON@1.12.2
+      Include file:  Drivers/STM32L0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+      Source file:   MDK/Templates/Src/stm32l0xx_it.c
+      Source file:   MDK/Templates/Src/stm32l0xx_hal_msp.c
+      Source file:   MDK/Templates/Src/main.c
+      Include file:  MDK/Templates/Inc/stm32l0xx_hal_conf.h
+      Include file:  Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c
+      Include file:  MDK/Templates/Inc/main.h
+      Include file:  Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h
+      Include file:  MDK/Templates/Inc/stm32l0xx_it.h
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:CORTEX@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:DMA@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:FLASH@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:GPIO@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:I2C@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:PWR@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c
+
+   * Component: Keil::Device&Standalone:STM32Cube HAL:RCC@1.12.2
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c
+      Source file:   Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c
+
+   * Component: Keil::Device&Standalone:Startup@1.12.2
+      Source file:   Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
+      Include file:  Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/arm/startup_stm32l031xx.s
+      Source file:   MDK/Device/Source/ARM/STM32L0xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
